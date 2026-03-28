@@ -14,7 +14,7 @@ const epilogue = Epilogue({
 const Companies = () => {
   const logos = [vodafone, intel, tesla, amd, talkit];
   return (
-    <div className="px-4 lg:px-0 py-12 max-w-7xl mx-auto">
+    <div className="px-4 lg:px-0 py-12">
       <h3 className={`${epilogue.className} text-gray-400 text-md mb-8`}>
         Companies we helped grow
       </h3>
