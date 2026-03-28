@@ -15,7 +15,7 @@ const epilogue = Epilogue({
 });
 const HeroSection = () => {
   return (
-    <section className="bg-[#F8F8FD] relative h-screen overflow-hidden z-10">
+    <section className="bg-[#F8F8FD] relative overflow-hidden h-190 z-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-2.5 lg:py-12 px-4 lg:px-0">
         {/* left side */}
         <div>
@@ -46,7 +46,11 @@ const HeroSection = () => {
         </div>
         {/* right side */}
         <div className="relative">
-          <Image src={heroImage} alt="hero image" className="hidden lg:block" />
+          <Image
+            src={heroImage}
+            alt="hero image"
+            className="hidden lg:block h-full"
+          />
           <div className="absolute bottom-125 left-20 lg:w-[200px] -z-10">
             <Image src={rectangle1} alt="rectangle1" />
           </div>
