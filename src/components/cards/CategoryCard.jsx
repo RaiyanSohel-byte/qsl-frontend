@@ -15,13 +15,13 @@ const CategoryCard = ({ category }) => {
       <Icon className="text-4xl text-primary group-hover:text-white transition-colors duration-300" />
 
       <div>
-        <h3 className="lg:mt-8 lg:mb-3 font-semibold text-2xl group-hover:text-white transition-colors">
+        <h3 className="lg:mt-8 lg:mb-3 font-semibold text-xl lg:text-2xl group-hover:text-white transition-colors">
           {category.name}
         </h3>
 
         <Link
           href="/"
-          className={`${epilogue.className} flex items-center gap-2 text-gray-400 group-hover:text-white transition-colors duration-300`}
+          className={`${epilogue.className} flex items-center gap-2 text-sm lg:text-base text-gray-400 group-hover:text-white transition-colors duration-300`}
         >
           {category.available} jobs available{" "}
           <LuArrowRight className="text-black group-hover:text-white transition-colors" />

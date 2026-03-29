@@ -78,6 +78,13 @@ const ExploreByCategories = () => {
           <CategoryCard key={i + 1} category={category} />
         ))}
       </div>
+      <Link
+        href="/"
+        className={`${epilogue.className} flex lg:hidden items-center text-primary font-semibold gap-1 mt-6 mb-10 lg:mb-0 text-base`}
+      >
+        {" "}
+        Show all jobs <FaArrowRight />
+      </Link>
     </div>
   );
 };
