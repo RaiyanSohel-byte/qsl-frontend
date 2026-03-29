@@ -119,13 +119,15 @@ const FeaturedJobs = () => {
           <FeaturedJobCards key={job.id} job={job} />
         ))}
       </div>
-      <Swiper className="mySwiper">
-        {jobData.map((job, i) => (
-          <SwiperSlide key={i + 1} className="px-4 my-10">
-            <FeaturedJobCards job={job} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="lg:hidden">
+        <Swiper className="mySwiper">
+          {jobData.map((job, i) => (
+            <SwiperSlide key={i + 1} className="px-4 my-10">
+              <FeaturedJobCards job={job} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
